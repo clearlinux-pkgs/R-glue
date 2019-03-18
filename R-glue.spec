@@ -4,15 +4,17 @@
 #
 Name     : R-glue
 Version  : 1.3.1
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/glue_1.3.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/glue_1.3.1.tar.gz
 Summary  : An implementation of interpreted string literals for R.
 Group    : Development/Tools
 License  : MIT
 Requires: R-glue-lib = %{version}-%{release}
+Requires: R-assertthat
 BuildRequires : R-DBI
 BuildRequires : R-RSQLite
+BuildRequires : R-assertthat
 BuildRequires : R-evaluate
 BuildRequires : buildreq-R
 
@@ -35,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552438430
+export SOURCE_DATE_EPOCH=1552896634
 
 %install
-export SOURCE_DATE_EPOCH=1552438430
+export SOURCE_DATE_EPOCH=1552896634
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -74,8 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library glue|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  glue || :
 
 
 %files
@@ -110,10 +111,14 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/glue/help/paths.rds
 /usr/lib64/R/library/glue/html/00Index.html
 /usr/lib64/R/library/glue/html/R.css
-/usr/lib64/R/library/glue/libs/symbols.rds
+/usr/lib64/R/library/glue/tests/testthat.R
+/usr/lib64/R/library/glue/tests/testthat/test-collapse.R
+/usr/lib64/R/library/glue/tests/testthat/test-color.R
+/usr/lib64/R/library/glue/tests/testthat/test-glue.R
+/usr/lib64/R/library/glue/tests/testthat/test-quoting.R
+/usr/lib64/R/library/glue/tests/testthat/test-sql.R
+/usr/lib64/R/library/glue/tests/testthat/test-trim.R
 
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/glue/libs/glue.so
-/usr/lib64/R/library/glue/libs/glue.so.avx2
-/usr/lib64/R/library/glue/libs/glue.so.avx512

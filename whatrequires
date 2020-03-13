@@ -1,6 +1,7 @@
 # This file contains recursive sources that require this package
 R-bayesplot
 R-brms
+R-cli
 R-dbplyr
 R-devtools
 R-dplyr

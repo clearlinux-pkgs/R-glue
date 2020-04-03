@@ -5,6 +5,7 @@ R-cli
 R-dbplyr
 R-devtools
 R-dplyr
+R-ggplot2
 R-lifecycle
 R-recipes
 R-stringr

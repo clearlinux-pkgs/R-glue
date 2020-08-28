@@ -1,13 +1,14 @@
 # This file contains recursive sources that require this package
 R-bayesplot
 R-brms
+R-broom
 R-cli
 R-dbplyr
-R-devtools
 R-dplyr
 R-ggplot2
 R-lifecycle
 R-recipes
+R-shiny
 R-stringr
 R-tidyr
 R-tidyselect

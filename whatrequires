@@ -13,6 +13,7 @@ R-ggplot2
 R-googledrive
 R-googlesheets4
 R-kableExtra
+R-keras
 R-lifecycle
 R-recipes
 R-reprex

@@ -4,7 +4,7 @@
 #
 Name     : R-glue
 Version  : 1.6.0
-Release  : 53
+Release  : 54
 URL      : https://cran.r-project.org/src/contrib/glue_1.6.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/glue_1.6.0.tar.gz
 Summary  : Interpreted String Literals
@@ -34,10 +34,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1639762073
+export SOURCE_DATE_EPOCH=1641028762
 
 %install
-export SOURCE_DATE_EPOCH=1639762073
+export SOURCE_DATE_EPOCH=1641028762
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -126,3 +126,5 @@ R CMD check --no-manual --no-examples --no-codoc glue || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/glue/libs/glue.so
+/usr/lib64/R/library/glue/libs/glue.so.avx2
+/usr/lib64/R/library/glue/libs/glue.so.avx512

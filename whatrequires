@@ -12,9 +12,11 @@ R-gargle
 R-ggplot2
 R-googledrive
 R-googlesheets4
+R-hardhat
 R-kableExtra
 R-keras
 R-lifecycle
+R-pillar
 R-recipes
 R-reprex
 R-shiny

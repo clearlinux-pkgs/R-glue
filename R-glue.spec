@@ -4,7 +4,7 @@
 #
 Name     : R-glue
 Version  : 1.6.2
-Release  : 62
+Release  : 63
 URL      : https://cran.r-project.org/src/contrib/glue_1.6.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/glue_1.6.2.tar.gz
 Summary  : Interpreted String Literals

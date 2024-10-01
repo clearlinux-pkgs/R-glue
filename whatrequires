@@ -4,6 +4,7 @@ R-bayesplot
 R-bench
 R-brms
 R-broom
+R-cards
 R-dbplyr
 R-dials
 R-dplyr
@@ -12,12 +13,13 @@ R-forcats
 R-gargle
 R-gfonts
 R-ggplot2
+R-ggpubr
+R-gh
 R-googledrive
 R-googlesheets4
 R-gtable
 R-hardhat
 R-httr2
-R-kableExtra
 R-keras
 R-lifecycle
 R-lintr
@@ -25,6 +27,7 @@ R-pillar
 R-pkgload
 R-recipes
 R-reprex
+R-rhub
 R-rsample
 R-rvest
 R-scales
@@ -32,7 +35,9 @@ R-shiny
 R-stringr
 R-themis
 R-tidyr
+R-tidyrules
 R-tidyselect
+R-tidytable
 R-usethis
 R-vcdExtra
 R-vctrs
